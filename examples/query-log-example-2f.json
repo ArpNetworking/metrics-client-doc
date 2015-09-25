@@ -1,0 +1,64 @@
+{
+    "version": "2f",
+    "annotations": {
+        "_start": "2014-03-24T12:15:41.008Z",
+        "_end": "2014-03-24T12:15:41.010Z",
+        "_id": "93c96636-0231-4aa7-b8fe-93e72777575f",
+        "_host": "my-host.groupon.com",
+        "_service": "MyService",
+        "_cluster": "MyService_UAT"
+    },
+    "timers": {
+        "foo": {
+            "values": [
+                {
+                    "value": 1,
+                    "unitNumerators": ["millisecond"]
+                },
+                {
+                    "value": 2,
+                    "unitNumerators": ["millisecond"]
+                }
+            ]
+        },
+        "bar": {
+            "values": [
+                {
+                    "value": 5,
+                    "unitNumerators": ["mebibyte"],
+                    "unitDenominators": ["second"]
+                },
+                {
+                    "value": 6,
+                    "unitNumerators": ["mebibyte"],
+                    "unitDenominators": ["second"]
+                }
+            ]
+        }
+    },
+    "gauges": {
+        "mem": {
+            "values": [
+                {
+                    "value": 1.2,
+                    "unitNumerators": ["megabyte"],
+                    "unitDenominators": []
+                },
+                {
+                    "value": 800,
+                    "unitNumerators": ["kilobyte"],
+                    "unitDenominators": []
+                }
+            ]
+        }
+    },
+    "counters": {
+        "dbQueries": {
+            "values": [
+                {
+                    "value": 1
+                }
+            ]
+        }
+    }
+}

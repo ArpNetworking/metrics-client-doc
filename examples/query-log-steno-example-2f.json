@@ -1,0 +1,71 @@
+{
+    "time": "1997-07-16T19:20:30.45Z",
+    "name": "aint.metrics",
+    "level": "info",
+    "data": {
+        "version": "2f",
+        "timers": {
+            "foo": {
+                "values": [
+                    {
+                        "value": 1,
+                        "unitNumerators": ["millisecond"]
+                    },
+                    {
+                        "value": 2,
+                        "unitNumerators": ["millisecond"]
+                    }
+                ]
+            },
+            "bar": {
+                "values": [
+                    {
+                        "value": 5,
+                        "unitNumerators": ["mebibyte"],
+                        "unitDenominators": ["second"]
+                    },
+                    {
+                        "value": 6,
+                        "unitNumerators": ["mebibyte"],
+                        "unitDenominators": ["second"]
+                    }
+                ]
+            }
+        },
+        "annotations": {
+            "_start": "2014-03-24T12:15:41.008Z",
+            "_end": "2014-03-24T12:15:41.010Z",
+            "_service": "MyService",
+            "_cluster": "MyService_UAT"
+        },
+        "gauges": {
+            "mem": {
+                "values": [
+                    {
+                        "value": 1.2,
+                        "unitNumerators": ["megabyte"],
+                        "unitDenominators": []
+                    },
+                    {
+                        "value": 800,
+                        "unitNumerators": ["kilobyte"],
+                        "unitDenominators": []
+                    }
+                ]
+            }
+        },
+        "counters": {
+            "dbQueries": {
+                "values": [
+                    {
+                        "value": 1
+                    }
+                ]
+            }
+        }
+    },
+    "id": "oRw59PrARvatGNC7fiWw4A",
+    "context": {
+        "host": "my-host.groupon.com"
+    }
+}
