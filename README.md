@@ -16,18 +16,24 @@ Provides a platform for recording, aggregating, publishing and accessing metrics
 
 Changes:
 * Include time offset relative to initTimestamp on each timer sample.
+* Binary file format in addition to standard and steno wrapped JSON.
+* Network sink for writing directly to Tsd Aggregator using TCP or UDP.
 
-#### 2F *(Proposed)*
+#### 2F
 
-* *Example Not Available*
-* *Schema Not Available*
+* Standard:
+** [Example](examples/query-log-example-2f.json)
+** [Schema](schema/query-log-schema-2f.json)
+* Steno:
+** [Example](examples/query-log-steno-example-2f.json)
+** [Schema](schema/query-log-steno-schema-2f.json)
 
 Changes:
 * Support for compound units (e.g. Megabytes per second).
 * Fully self-describing:
-    * Include service name
-    * Include cluster name
-    * Include host name
+    * Includes service name
+    * Includes cluster name
+    * Includes host name
 
 #### 2E
 
@@ -58,7 +64,7 @@ Changes:
 
 #### Pre-2C
 
-All versions prior to 2C of the file format and are considered *deprecated*.
+All versions prior to 2C of the file format are considered *deprecated*.
 
 License
 -------
