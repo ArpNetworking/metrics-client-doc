@@ -77,7 +77,8 @@
                     "type": "number"
                 }
             },
-            "required": ["value"]
+            "required": ["value"],
+            "additionalProperties": false
         },
         "metric": {
             "type": "object",
@@ -89,7 +90,8 @@
                     }
                 }
             },
-            "required": ["values"]
+            "required": ["values"],
+            "additionalProperties": false
         },
         "metricsList": {
             "type": "object",
@@ -154,5 +156,6 @@
             "pattern": "^2f$"
         }
     },
-    "required": ["annotations", "version"]
+    "required": ["annotations", "version"],
+    "additionalProperties": false
 }

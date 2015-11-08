@@ -77,7 +77,8 @@
                     "type": "number"
                 }
             },
-            "required": ["value"]
+            "required": ["value"],
+            "additionalProperties": false
         },
         "metric": {
             "type": "object",
@@ -89,7 +90,8 @@
                     }
                 }
             },
-            "required": ["values"]
+            "required": ["values"],
+            "additionalProperties": false
         },
         "metricsList": {
             "type": "object",
@@ -142,7 +144,8 @@
                     "pattern": "^2f$"
                 }
             },
-            "required": ["annotations", "version"]
+            "required": ["annotations", "version"],
+            "additionalProperties": false
         }
     },
 
@@ -177,7 +180,12 @@
                 }
             },
             "required": ["host"]
+        },
+        "version":  {
+            "type":"string",
+            "pattern": "^0$"
         }
     },
-    "required": ["time", "name", "level", "data", "id"]
+    "required": ["time", "name", "level", "data", "id"],
+    "additionalProperties": false
 }
