@@ -27,6 +27,7 @@ Changes:
 Changes:
 * Add Support for dimensions
 * Remove restriction against additional root fields
+* Simplify annotations by extracting id and date
 
 #### 2F
 
