@@ -1,16 +1,17 @@
 {
     "version": "2g",
+    "id": "93c96636-0231-4aa7-b8fe-93e72777575f",
+    "date": "2014-03-24T12:15:41.010Z",
     "dimensions": {
         "first": "alpha",
-        "second": "beta"
+        "second": "beta",
+        "host": "my-host.groupon.com",
+        "service": "MyService",
+        "cluster": "MyService_UAT"
     },
     "annotations": {
-        "_start": "2014-03-24T12:15:41.008Z",
-        "_end": "2014-03-24T12:15:41.010Z",
-        "_id": "93c96636-0231-4aa7-b8fe-93e72777575f",
-        "_host": "my-host.groupon.com",
-        "_service": "MyService",
-        "_cluster": "MyService_UAT"
+        "foo": "cat",
+        "bar": "dog",
     },
     "timers": {
         "foo": {

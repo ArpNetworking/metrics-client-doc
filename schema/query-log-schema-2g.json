@@ -108,44 +108,37 @@
   "description": "log file entry for ingestion by tsd aggregator",
   "type": "object",
   "properties": {
-    "dimensions": {
-        "type": "object",
-        "additionalProperties": {
-          "type": "string"
-        }
+    "id": {
+      "type": "string"
     },
-    "annotations": {
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dimensions": {
       "type": "object",
-      "properties": {
-        "_end": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "_start": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "_id": {
+      "properties": {          
+        "host": {
           "type": "string"
         },
-        "_host": {
+        "service": {
           "type": "string"
         },
-        "_service": {
-          "type": "string"
-        },
-        "_cluster": {
+        "cluster": {
           "type": "string"
         }
       },
       "required": [
-        "_start",
-        "_end",
-        "_id",
-        "_host",
-        "_service",
-        "_cluster"
+        "host",
+        "service",
+        "cluster"
       ],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "annotations": {
+      "type": "object",
       "additionalProperties": {
         "type": "string"
       }
