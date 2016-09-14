@@ -158,7 +158,10 @@
     }
   },
   "required": [
+    "dimensions",
     "annotations",
+    "date",
+    "id",
     "version"
   ]
 }
