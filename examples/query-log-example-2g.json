@@ -11,7 +11,7 @@
     },
     "annotations": {
         "foo": "cat",
-        "bar": "dog",
+        "bar": "dog"
     },
     "timers": {
         "foo": {
