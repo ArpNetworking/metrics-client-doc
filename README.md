@@ -16,7 +16,6 @@ Provides a platform for recording, aggregating, publishing and accessing metrics
 
 Changes:
 * Include time offset relative to initTimestamp on each timer sample.
-* Binary file format in addition to standard and steno wrapped JSON.
 * Network sink for writing directly to Tsd Aggregator using TCP or UDP.
 
 #### 2G
@@ -28,6 +27,7 @@ Changes:
 * Add Support for dimensions
 * Remove restriction against additional root fields
 * Simplify annotations by extracting id and date
+* [Binary file format](https://github.com/InscopeMetrics/client-protocol) in addition to standard and steno wrapped JSON.
 
 #### 2F
 

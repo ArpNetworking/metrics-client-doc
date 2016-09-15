@@ -105,13 +105,13 @@
     }
   },
   "title": "Query Log",
-  "description": "log file entry for ingestion by tsd aggregator",
+  "description": "log file entry for ingestion by metrics aggregator daemon",
   "type": "object",
   "properties": {
     "id": {
       "type": "string"
     },
-    "date": {
+    "timestamp": {
       "type": "string",
       "format": "date-time"
     },

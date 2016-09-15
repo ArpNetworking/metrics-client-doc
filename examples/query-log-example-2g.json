@@ -1,20 +1,20 @@
 {
     "version": "2g",
     "id": "93c96636-0231-4aa7-b8fe-93e72777575f",
-    "date": "2014-03-24T12:15:41.010Z",
+    "timestamp": "2014-03-24T12:15:41.010Z",
     "dimensions": {
-        "first": "alpha",
-        "second": "beta",
+        "country": "US",
+        "method": "GET",
         "host": "my-host.groupon.com",
         "service": "MyService",
         "cluster": "MyService_UAT"
     },
     "annotations": {
-        "foo": "cat",
-        "bar": "dog"
+        "requesId": "a249ff6a-ec8a-4443-b982-79948da5fa8c",
+        "testGroup": "false"
     },
     "timers": {
-        "foo": {
+        "cacheRead": {
             "values": [
                 {
                     "value": 1,
@@ -26,7 +26,7 @@
                 }
             ]
         },
-        "bar": {
+        "diskWrite": {
             "values": [
                 {
                     "value": 5,
