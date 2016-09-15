@@ -18,11 +18,21 @@
             "values": [
                 {
                     "value": 1,
-                    "unitNumerators": ["millisecond"]
+                    "unitNumerators": [
+                      {
+                        "type": "second",
+                        "scale": "milli"
+                      }
+                    ]
                 },
                 {
                     "value": 2,
-                    "unitNumerators": ["millisecond"]
+                    "unitNumerators": [
+                      {
+                        "type": "second",
+                        "scale": "milli"
+                      }
+                    ]
                 }
             ]
         },
@@ -30,13 +40,31 @@
             "values": [
                 {
                     "value": 5,
-                    "unitNumerators": ["mebibyte"],
-                    "unitDenominators": ["second"]
+                    "unitNumerators": [
+                      {
+                        "type": "byte",
+                        "scale": "mebi"
+                      }
+                    ],
+                    "unitDenominators": [
+                      {
+                        "type": "second"
+                      }
+                    ]
                 },
                 {
                     "value": 6,
-                    "unitNumerators": ["mebibyte"],
-                    "unitDenominators": ["second"]
+                    "unitNumerators": [
+                      {
+                        "type": "byte",
+                        "scale": "mebi"
+                      }
+                    ],
+                    "unitDenominators": [
+                      {
+                        "type": "second"
+                      }
+                    ]
                 }
             ]
         }
@@ -46,12 +74,22 @@
             "values": [
                 {
                     "value": 1.2,
-                    "unitNumerators": ["megabyte"],
+                    "unitNumerators": [
+                      {
+                        "type": "byte",
+                        "scale": "mega"
+                      }
+                    ],
                     "unitDenominators": []
                 },
                 {
                     "value": 800,
-                    "unitNumerators": ["kilobyte"],
+                    "unitNumerators": [
+                      {
+                        "type": "byte",
+                        "scale": "kilo"
+                      }
+                    ],
                     "unitDenominators": []
                 }
             ]
