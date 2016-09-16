@@ -18,21 +18,27 @@
             "values": [
                 {
                     "value": 1,
-                    "unitNumerators": [
-                      {
-                        "type": "second",
-                        "scale": "milli"
-                      }
-                    ]
+                    "unit":
+                    {
+                        "numerators": [
+                            {
+                              "type": "second",
+                                "scale": "milli"
+                            }
+                        ]
+                    }
                 },
                 {
                     "value": 2,
-                    "unitNumerators": [
-                      {
-                        "type": "second",
-                        "scale": "milli"
-                      }
-                    ]
+                    "unit":
+                    {
+                        "numerators": [
+                            {
+                                "type": "second",
+                                "scale": "milli"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -40,31 +46,36 @@
             "values": [
                 {
                     "value": 5,
-                    "unitNumerators": [
-                      {
-                        "type": "byte",
-                        "scale": "mebi"
-                      }
-                    ],
-                    "unitDenominators": [
-                      {
-                        "type": "second"
-                      }
-                    ]
+                    "unit":
+                    {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mebi"
+                            } 
+                        ],
+                        "denominators": [
+                            {
+                                "type": "second"
+                            }
+                        ]
+                    }   
                 },
                 {
                     "value": 6,
-                    "unitNumerators": [
-                      {
-                        "type": "byte",
-                        "scale": "mebi"
-                      }
-                    ],
-                    "unitDenominators": [
-                      {
-                        "type": "second"
-                      }
-                    ]
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mebi"
+                            }
+                        ],
+                        "denominators": [
+                        {
+                            "type": "second"
+                        }
+                        ]
+                    }
                 }
             ]
         }
@@ -74,23 +85,27 @@
             "values": [
                 {
                     "value": 1.2,
-                    "unitNumerators": [
-                      {
-                        "type": "byte",
-                        "scale": "mega"
-                      }
-                    ],
-                    "unitDenominators": []
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mega"
+                            }
+                        ],
+                        "denominators": []
+                    }
                 },
                 {
                     "value": 800,
-                    "unitNumerators": [
-                      {
-                        "type": "byte",
-                        "scale": "kilo"
-                      }
-                    ],
-                    "unitDenominators": []
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "kilo"
+                            }
+                        ],
+                        "denominators": []
+                    }
                 }
             ]
         }
