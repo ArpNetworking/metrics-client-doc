@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-
     "unit": {
       "type": "object",
       "properties": {
@@ -53,7 +52,7 @@
             "pebi",
             "exbi",
             "zebi",
-            "yobi",
+            "yobi"
           ]
         }
       }
@@ -61,16 +60,21 @@
     "sample": {
       "type": "object",
       "properties": {
-        "unitNumerators": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/unit"
-          }
-        },
-        "unitDenominators": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/unit"
+        "unit": {
+          "type": "object",
+          "properties": {
+            "numerators": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/unit"
+              }
+            },
+            "denominators": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/unit"
+              }
+            }
           }
         },
         "value": {
@@ -79,8 +83,7 @@
       },
       "required": [
         "value"
-      ],
-      "additionalProperties": false
+      ]
     },
     "metric": {
       "type": "object",
@@ -94,8 +97,7 @@
       },
       "required": [
         "values"
-      ],
-      "additionalProperties": false
+      ]
     },
     "metricsList": {
       "type": "object",
@@ -117,7 +119,7 @@
     },
     "dimensions": {
       "type": "object",
-      "properties": {          
+      "properties": {
         "host": {
           "type": "string"
         },
@@ -128,11 +130,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "host",
-        "service",
-        "cluster"
-      ],
       "additionalProperties": {
         "type": "string"
       }

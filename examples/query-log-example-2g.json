@@ -18,11 +18,10 @@
             "values": [
                 {
                     "value": 1,
-                    "unit":
-                    {
+                    "unit": {
                         "numerators": [
                             {
-                              "type": "second",
+                                "type": "second",
                                 "scale": "milli"
                             }
                         ]
@@ -30,8 +29,7 @@
                 },
                 {
                     "value": 2,
-                    "unit":
-                    {
+                    "unit": {
                         "numerators": [
                             {
                                 "type": "second",
@@ -46,20 +44,19 @@
             "values": [
                 {
                     "value": 5,
-                    "unit":
-                    {
+                    "unit": {
                         "numerators": [
                             {
                                 "type": "byte",
                                 "scale": "mebi"
-                            } 
+                            }
                         ],
                         "denominators": [
                             {
                                 "type": "second"
                             }
                         ]
-                    }   
+                    }
                 },
                 {
                     "value": 6,
@@ -71,9 +68,9 @@
                             }
                         ],
                         "denominators": [
-                        {
-                            "type": "second"
-                        }
+                            {
+                                "type": "second"
+                            }
                         ]
                     }
                 }
@@ -91,8 +88,7 @@
                                 "type": "byte",
                                 "scale": "mega"
                             }
-                        ],
-                        "denominators": []
+                        ]
                     }
                 },
                 {
@@ -103,8 +99,7 @@
                                 "type": "byte",
                                 "scale": "kilo"
                             }
-                        ],
-                        "denominators": []
+                        ]
                     }
                 }
             ]
