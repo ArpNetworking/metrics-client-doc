@@ -119,17 +119,6 @@
     },
     "dimensions": {
       "type": "object",
-      "properties": {
-        "host": {
-          "type": "string"
-        },
-        "service": {
-          "type": "string"
-        },
-        "cluster": {
-          "type": "string"
-        }
-      },
       "additionalProperties": {
         "type": "string"
       }
