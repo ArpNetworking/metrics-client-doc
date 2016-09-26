@@ -113,7 +113,11 @@
     "id": {
       "type": "string"
     },
-    "timestamp": {
+    "start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end": {
       "type": "string",
       "format": "date-time"
     },
@@ -146,7 +150,8 @@
   "required": [
     "dimensions",
     "annotations",
-    "timestamp",
+    "start",
+    "end",
     "id",
     "version"
   ]

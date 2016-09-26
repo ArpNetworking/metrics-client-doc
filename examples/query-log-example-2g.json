@@ -1,11 +1,12 @@
 {
     "version": "2g",
     "id": "93c96636-0231-4aa7-b8fe-93e72777575f",
-    "timestamp": "2014-03-24T12:15:41.010Z",
+    "start": "2014-03-24T12:13:22.170Z",
+    "end": "2014-03-24T12:15:41.010Z",
     "dimensions": {
         "country": "US",
         "method": "GET",
-        "host": "my-host.groupon.com",
+        "host": "my-host.metrics.com",
         "service": "MyService",
         "cluster": "MyService_UAT"
     },
