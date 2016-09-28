@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "unit": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "second",
+            "minute",
+            "hour",
+            "day",
+            "week",
+            "bit",
+            "byte",
+            "rotation",
+            "degree",
+            "radian",
+            "celsius",
+            "fahrenheit",
+            "kelvin"
+          ]
+        },
+        "scale": {
+          "type": "string",
+          "enum": [
+            "yocto",
+            "zepto",
+            "atto",
+            "femto",
+            "pico",
+            "nano",
+            "micro",
+            "milli",
+            "centi",
+            "deci",
+            "deca",
+            "hecto",
+            "kilo",
+            "mega",
+            "giga",
+            "tera",
+            "peta",
+            "exa",
+            "zetta",
+            "yotta",
+            "kibi",
+            "mebi",
+            "gibi",
+            "tebi",
+            "pebi",
+            "exbi",
+            "zebi",
+            "yobi"
+          ]
+        }
+      }
+    },
+    "sample": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "object",
+          "properties": {
+            "numerators": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/unit"
+              }
+            },
+            "denominators": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/unit"
+              }
+            }
+          }
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "properties": {
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/sample"
+          }
+        }
+      },
+      "required": [
+        "values"
+      ]
+    },
+    "metricsList": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/metric"
+      }
+    }
+  },
+  "title": "Query Log",
+  "description": "log file entry for ingestion by metrics aggregator daemon",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "annotations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "counters": {
+      "$ref": "#/definitions/metricsList"
+    },
+    "gauges": {
+      "$ref": "#/definitions/metricsList"
+    },
+    "timers": {
+      "$ref": "#/definitions/metricsList"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^2g$"
+    }
+  },
+  "required": [
+    "dimensions",
+    "annotations",
+    "start",
+    "end",
+    "id",
+    "version"
+  ]
+}

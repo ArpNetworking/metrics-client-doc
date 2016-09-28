@@ -1,0 +1,118 @@
+{
+    "version": "2g",
+    "id": "93c96636-0231-4aa7-b8fe-93e72777575f",
+    "start": "2014-03-24T12:13:22.170Z",
+    "end": "2014-03-24T12:15:41.010Z",
+    "dimensions": {
+        "country": "US",
+        "method": "GET",
+        "host": "my-host.metrics.com",
+        "service": "MyService",
+        "cluster": "MyService_UAT"
+    },
+    "annotations": {
+        "requesId": "a249ff6a-ec8a-4443-b982-79948da5fa8c",
+        "testGroup": "false"
+    },
+    "timers": {
+        "cacheRead": {
+            "values": [
+                {
+                    "value": 1,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "second",
+                                "scale": "milli"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "value": 2,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "second",
+                                "scale": "milli"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "diskWrite": {
+            "values": [
+                {
+                    "value": 5,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mebi"
+                            }
+                        ],
+                        "denominators": [
+                            {
+                                "type": "second"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "value": 6,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mebi"
+                            }
+                        ],
+                        "denominators": [
+                            {
+                                "type": "second"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "gauges": {
+        "mem": {
+            "values": [
+                {
+                    "value": 1.2,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "mega"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "value": 800,
+                    "unit": {
+                        "numerators": [
+                            {
+                                "type": "byte",
+                                "scale": "kilo"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "counters": {
+        "dbQueries": {
+            "values": [
+                {
+                    "value": 1
+                }
+            ]
+        }
+    }
+}
