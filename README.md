@@ -17,6 +17,7 @@ Provides a platform for recording, aggregating, publishing and accessing metrics
 Changes:
 * Include time offset relative to initTimestamp on each timer sample.
 * Network sink for writing directly to Tsd Aggregator using TCP or UDP.
+* Add shutdown procedure to factory and propgate to sinks and encoders.
 
 #### 2G
 
